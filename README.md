@@ -14,7 +14,7 @@ To use the VHFBEACON library:
 
 - you must add Arduino SPI library for AD9850 : F4GOJ Christophe f4goj@free.fr
 
-- Go to https://github.com/F4GOJ/AD9850SPI, click the [Download ZIP](https://github.com/F4GOJ/AD9850SPI/archive/master.zip) button and save the ZIP file to a convenient location on your PC.
+- Go to https://github.com/F4GOJ/AD9850SPI
 
 ## Usage notes ##
 
