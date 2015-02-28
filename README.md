@@ -3,7 +3,7 @@ F4GOH Anthony f4goh@orange.fr <br>
 
 February 2015
 
-Use this library freely.
+Use this library freely with Arduino 1.0.6
 
 ## Installation ##
 To use the VHFBEACON library:  
