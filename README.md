@@ -12,7 +12,7 @@ To use the VHFBEACON library:
 - Rename the folder to  VHFBEACON.
 - Copy the renamed folder to the Arduino sketchbook\libraries folder.
 
-- you must add Arduino SPI library for AD9850 : F4GOJ Christophe f4goj@free.fr
+- you must add Arduino SPI library for AD9850 : F4GOJ Christophe f4goj@free.fr <br>
   Go to https://github.com/F4GOJ/AD9850SPI
 
 ## Usage notes ##
