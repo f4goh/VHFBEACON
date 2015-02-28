@@ -1,2 +1,2 @@
-# VHFBEACON
-VHF beacon library for arduino
+VHFBEACON
+=========
