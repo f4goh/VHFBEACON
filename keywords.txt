@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map For HFBEACON
+#######################################
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Beacon	KEYWORD1
+VHFBEACON	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+ddsPower	KEYWORD2
+modulation	KEYWORD2
+sendpacket	KEYWORD2
+gpsnmea	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
