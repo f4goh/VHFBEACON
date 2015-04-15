@@ -27,6 +27,7 @@ VHFBEACON::VHFBEACON(){
  GPGGA.nbSat=0;
  GPGGA.debug=false;
  GPGGA.dumpNmea=false;
+ mode=0;
 }
 
 void VHFBEACON::begin(int p_sync, int p_led, int p_mod, int p_cde) {
@@ -95,7 +96,13 @@ void VHFBEACON::send_bit()
  #define a2200   300
  #define a1200   150
  
-
+# define f1 1200
+# define shift 1000
+# define delay_bit 730
+ 
+//fm mode
+if (mode==0)
+{
 if (f1200==0)
                   {
                   freq_sin=freq+a2200;
@@ -125,6 +132,31 @@ DDS.setfreq(freq_sin,0); // fréquence en Hz (type double)
 delayMicroseconds(t1200); 
                   }
 }
+else			  
+// ssb mode
+
+//digitalWrite(sync, digitalRead(sync)^1);  //pour réglage 1200 bauds sur oscillo
+{
+if (f1200==0)
+                  {
+                  freq_sin=freq+f1+shift;
+                   DDS.setfreq(freq_sin,0); // fréquence en Hz (type double)
+                   delayMicroseconds(delay_bit);
+
+                  }
+                  else
+                  {
+freq_sin=freq+f1;
+DDS.setfreq(freq_sin,0); // fréquence en Hz (type double)
+delayMicroseconds(delay_bit);
+
+                  }				  
+}				  
+}
+
+
+
+
 
 /********************************************************
  * AX25 routines
