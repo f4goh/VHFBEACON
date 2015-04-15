@@ -36,7 +36,8 @@ class VHFBEACON
    int led;
    int mod;
    int cde;
-
+   byte mode;
+   
    typedef struct  {
   char hour[6+1];
   char Latitude[9+1];
@@ -58,16 +59,21 @@ class VHFBEACON
   } GGAstruct;
   GGAstruct GPGGA;    //declare la structure
    
-  
+ 
+ 
+ 
   private:
+  
+  void send_bit();
+  unsigned char flip,f1200;
   
   void sendbyte (unsigned char inbyte);
   void fcsbit(unsigned short tbyte);
   void flipout(void);
-  void send_bit();
+ 
   
   unsigned char stuff,flag,fcsflag;
-  unsigned char flip,f1200;
+ 
   unsigned short crc;
   double freq_sin;
   
