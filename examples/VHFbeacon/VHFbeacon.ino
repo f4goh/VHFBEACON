@@ -168,7 +168,6 @@ if (Beacon.GPGGA.sync==1)        // test if is time to txing
 
   
   
-  
 
 
 
