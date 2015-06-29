@@ -5,6 +5,9 @@ February 2015
 
 Use this library freely with Arduino 1.0.6
 
+All schematics here :
+https://hamprojects.wordpress.com/2015/06/29/vhf-beacon-and-aprs-tracker-english-version/
+
 ## Installation ##
 To use the VHFBEACON library:  
 - Go to https://github.com/f4goh/VHFBEACON, click the [Download ZIP](https://github.com/f4goh/VHFBEACON/archive/master.zip) button and save the ZIP file to a convenient location on your PC.
